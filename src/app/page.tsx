@@ -28,7 +28,7 @@ export default function Home() {
             Welcome to my software development portfolio website! I'm currently
             an IT Intern at KFC. I'm a passionate developer who loves solving
             problems through coding. If you're interested in learning more about
-            my professional background and skills, please check out my Resumé by
+            my professional background and skills, please check out my Resume by
             clicking the button below. Feel free to browse my portfolio and
             explore the projects I've worked on. Thanks for visiting!
           </p>
@@ -37,6 +37,7 @@ export default function Home() {
               className="group -m-1 p-1"
               aria-label="Follow on GitHub"
               href="https://github.com/sebastianjburman"
+              target="_blank"
             >
               <svg
                 viewBox="0 0 24 24"
@@ -50,6 +51,7 @@ export default function Home() {
               className="group -m-1 p-1"
               aria-label="Follow on LinkedIn"
               href="https://www.linkedin.com/in/sebastian-burman-62118b203"
+              target="_blank"
             >
               <svg
                 viewBox="0 0 24 24"
@@ -59,12 +61,14 @@ export default function Home() {
                 <path d="M18.335 18.339H15.67v-4.177c0-.996-.02-2.278-1.39-2.278-1.389 0-1.601 1.084-1.601 2.205v4.25h-2.666V9.75h2.56v1.17h.035c.358-.674 1.228-1.387 2.528-1.387 2.7 0 3.2 1.778 3.2 4.091v4.715zM7.003 8.575a1.546 1.546 0 01-1.548-1.549 1.548 1.548 0 111.547 1.549zm1.336 9.764H5.666V9.75H8.34v8.589zM19.67 3H4.329C3.593 3 3 3.58 3 4.297v15.406C3 20.42 3.594 21 4.328 21h15.338C20.4 21 21 20.42 21 19.703V4.297C21 3.58 20.4 3 19.666 3h.003z"></path>
               </svg>
             </a>
-            <button
+            <a
               type="button"
-              className="text-white bg-teal-500 hover:bg-teal-400 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2"
+              className="text-white bg-teal-500 hover:bg-teal-400 focus:ring-4 focus:ring-teal-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2"
+              href="/files/Resume.pdf"
+              target="_blank"
             >
               Resume
-            </button>
+            </a>
           </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-screen">
