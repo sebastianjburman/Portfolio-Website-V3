@@ -2,37 +2,13 @@
 
 import ProjectCard from "@/components/project-card/project-card";
 import TopNavbar from "@/components/top-navbar/top-navbar";
-import ProjectCardBadgeModel from "@/models/project-card-badge-model";
-import ProjectCardModel from "@/models/project-card-model";
 import { Timeline } from "flowbite-react";
 import Image from "next/image";
 import { useState } from "react";
+import allProjects from "@/models/all-projects";
 
 export default function Home() {
-  const [projects, setProjects] = useState([
-    new ProjectCardModel(
-      "Portfolio Website (V3)",
-      "Next JS and Tailwind CSS. My portfolio website.",
-      "/png/portfoliowebsitev3.png",
-      "https://sebastianjburman.com/",
-      [
-        new ProjectCardBadgeModel(0, "Next.js", "dark"),
-        new ProjectCardBadgeModel(1, "Tailwind CSS", "info"),
-      ]
-    ),
-    new ProjectCardModel(
-      "Workout Planning Application",
-      "Angular frontend, .NET backend and MongoDB. Used JWT for authentication. Project to show of my skills.",
-      "/png/workoutapplication.png",
-      "https://workoutplanningapplication.netlify.app/",
-      [
-        new ProjectCardBadgeModel(0, "Angular", "failure"),
-        new ProjectCardBadgeModel(1, "C#", "info"),
-        new ProjectCardBadgeModel(2, "Mongo", "success"),
-      ]
-    ),
-  ]);
-
+  const [projects, setProjects] = useState([allProjects[0], allProjects[1]]);
   return (
     <main className="bg-zinc-900">
       <TopNavbar></TopNavbar>
@@ -108,6 +84,7 @@ export default function Home() {
                     image={p.image}
                     link={p.link}
                     badges={p.badges}
+                    repoLink={p.repoLink}
                   ></ProjectCard>
                 );
               })}

@@ -6,6 +6,7 @@ export default class ProjectCardModel {
     public description: string,
     public image: string,
     public link: string,
+    public repoLink: string,
     public badges: ProjectCardBadgeModel[]
   ) {}
 }
