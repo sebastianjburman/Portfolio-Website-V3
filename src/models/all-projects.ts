@@ -7,7 +7,7 @@ const allProjects: ProjectCardModel[] = [
     "Next JS and Tailwind CSS. My portfolio website.",
     "/png/portfoliowebsitev3.png",
     "https://sebastianjburman.com/",
-    "",
+    "https://github.com/sebastianjburman/Portfolio-Website-V3",
     [
       new ProjectCardBadgeModel(0, "Next.js", "dark"),
       new ProjectCardBadgeModel(1, "Tailwind CSS", "info"),
