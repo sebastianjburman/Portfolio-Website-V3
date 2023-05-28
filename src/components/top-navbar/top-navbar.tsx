@@ -30,12 +30,6 @@ export default function TopNavbar() {
             Projects
           </Navbar.Link>
           <Navbar.Link
-            href="/about"
-            className="text-white rounded border-none hover:bg-teal-400 md:hover:text-teal-400"
-          >
-            About
-          </Navbar.Link>
-          <Navbar.Link
             href="/contact"
             className="text-white rounded border-none hover:bg-teal-400 md:hover:text-teal-400"
           >
