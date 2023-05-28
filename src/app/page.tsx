@@ -1,9 +1,38 @@
 "use client";
 
+import ProjectCard from "@/components/project-card/project-card";
 import TopNavbar from "@/components/top-navbar/top-navbar";
+import ProjectCardBadgeModel from "@/models/project-card-badge-model";
+import ProjectCardModel from "@/models/project-card-model";
+import { Timeline } from "flowbite-react";
 import Image from "next/image";
+import { useState } from "react";
 
 export default function Home() {
+  const [projects, setProjects] = useState([
+    new ProjectCardModel(
+      "Portfolio Website (V3)",
+      "Next JS and Tailwind CSS. My portfolio website.",
+      "/png/portfoliowebsitev3.png",
+      "https://sebastianjburman.com/",
+      [
+        new ProjectCardBadgeModel(0, "Next.js", "dark"),
+        new ProjectCardBadgeModel(1, "Tailwind CSS", "info"),
+      ]
+    ),
+    new ProjectCardModel(
+      "Workout Planning Application",
+      "Angular frontend, .NET backend and MongoDB. Used JWT for authentication. Project to show of my skills.",
+      "/png/workoutapplication.png",
+      "https://workoutplanningapplication.netlify.app/",
+      [
+        new ProjectCardBadgeModel(0, "Angular", "failure"),
+        new ProjectCardBadgeModel(1, "C#", "info"),
+        new ProjectCardBadgeModel(2, "Mongo", "success"),
+      ]
+    ),
+  ]);
+
   return (
     <main className="bg-zinc-900">
       <TopNavbar></TopNavbar>
@@ -58,10 +87,79 @@ export default function Home() {
             </a>
             <button
               type="button"
-              className="text-white bg-teal-400 hover:bg-teal-300 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2"
+              className="text-white bg-teal-500 hover:bg-teal-400 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2"
             >
               Resume
             </button>
+          </div>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-screen">
+          <div>
+            <h1 className="text-2xl mt-3 mb-5 underline font-semibold">
+              Recent Projects
+            </h1>
+            <div className="flex justify-center flex-col">
+              {projects.map((p) => {
+                return (
+                  <ProjectCard
+                    key={p.title}
+                    title={p.title}
+                    description={p.description}
+                    image={p.image}
+                    link={p.link}
+                    badges={p.badges}
+                  ></ProjectCard>
+                );
+              })}
+            </div>
+            <a
+              href="#"
+              className="inline-flex mt-2 items-center font-medium text-cyan-500 hover:underline hover:text-cyan-400"
+            >
+              View all projects archive
+              <svg
+                aria-hidden="true"
+                className="w-5 h-5 ml-1"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"></path>
+              </svg>
+            </a>
+          </div>
+          <div>
+            <h1 className="text-2xl mt-3 mb-5 underline font-semibold">Work</h1>
+            <Timeline>
+              <Timeline.Item>
+                <Timeline.Point />
+                <Timeline.Content>
+                  <Timeline.Time>
+                    <h1 className="text-cyan-500 mb-3">Present</h1>
+                  </Timeline.Time>
+                  <Timeline.Title className="text-white">
+                    IT Intern (KFC)
+                  </Timeline.Title>
+                  <Timeline.Body>
+                    - NET MVC Web development on a above restaurant application.
+                    <br></br>- Application health checks to make sure a backend
+                    is ready to take in requests.
+                    <br></br>- Created test to run in CI pipelines to ensure new
+                    changes to repos don't break application functionality.
+                    <br></br>- Helped make code repos more maintainable by
+                    fixing code warnings and following best practices.
+                  </Timeline.Body>
+                </Timeline.Content>
+              </Timeline.Item>
+              <Timeline.Item>
+                <Timeline.Point />
+                <Timeline.Content>
+                  <Timeline.Time>
+                    <h1 className="text-cyan-500">March 2022</h1>
+                  </Timeline.Time>
+                </Timeline.Content>
+              </Timeline.Item>
+            </Timeline>
           </div>
         </div>
       </div>

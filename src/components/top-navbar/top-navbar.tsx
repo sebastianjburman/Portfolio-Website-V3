@@ -3,8 +3,8 @@ import { Navbar } from "flowbite-react";
 
 export default function TopNavbar() {
   return (
-    <div className="w-screen bg-zinc-700">
-      <Navbar fluid className="bg-zinc-700 max-w-screen-xl mx-auto  ">
+    <div className="w-screen bg-zinc-800">
+      <Navbar fluid className="bg-zinc-800 max-w-screen-xl mx-auto  ">
         <Navbar.Brand href="/navbars">
           <img
             alt="Terminal Svg"
