@@ -30,9 +30,7 @@ export default function Home() {
             problems through coding. If you're interested in learning more about
             my professional background and skills, please check out my Resumé by
             clicking the button below. Feel free to browse my portfolio and
-            explore the projects I've worked on. For more information on the
-            specific technologies and programming languages I've worked with,
-            please visit my About Me page. Thanks for visiting!
+            explore the projects I've worked on. Thanks for visiting!
           </p>
           <div className="mt-6 flex gap-6">
             <a
@@ -90,7 +88,7 @@ export default function Home() {
               })}
             </div>
             <a
-              href="#"
+              href="/projects"
               className="inline-flex mt-2 items-center font-medium text-cyan-500 hover:underline hover:text-cyan-400"
             >
               View all projects archive

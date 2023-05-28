@@ -16,26 +16,45 @@ export default function ProjectsPage() {
         <Table className="mt-4">
           <Table.Head>
             <Table.HeadCell className="text-white bg-transparent border-b border-slate-700">
-              Project Name
+              Name
             </Table.HeadCell>
-            <Table.HeadCell className="text-white bg-transparent border-b border-slate-700 hidden md:block">
+            <Table.HeadCell className="text-white bg-transparent border-b border-slate-700 hidden md:table-cell">
               Technology
             </Table.HeadCell>
-            <Table.HeadCell className="text-white bg-transparent border-b border-slate-700">
+            <Table.HeadCell className="text-white bg-transparent border-b border-slate-700 hidden md:table-cell">
               Source
             </Table.HeadCell>
-            <Table.HeadCell className="text-white bg-transparent border-b border-slate-700">
+            <Table.HeadCell className="text-white bg-transparent border-b border-slate-700 hidden sm:table-cell">
               Link
             </Table.HeadCell>
           </Table.Head>
           <Table.Body className="divide-y">
             {projects.map((project, index) => {
               return (
-                <Table.Row className="border-slate-700" key={index}>
+                <Table.Row
+                  className="border-slate-700 rounded hover:backdrop-blur-sm hover:bg-white/10 transition-all"
+                  key={index}
+                >
                   <Table.Cell className="whitespace-nowrap font-medium text-white">
-                    {project.title}
+                    <h1 className="hidden sm:block">{project.title}</h1>
+                    <a
+                      href={project.link ? project.link : project.repoLink}
+                      target="_blank"
+                      className="inline-flex mt-2 items-center font-medium text-cyan-500 hover:underline hover:text-cyan-400 sm:hidden"
+                    >
+                      {project.title}
+                      <svg
+                        aria-hidden="true"
+                        className="w-5 h-5 ml-1"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"></path>
+                      </svg>
+                    </a>
                   </Table.Cell>
-                  <Table.Cell className="whitespace-nowrap font-medium text-white hidden md:block">
+                  <Table.Cell className="whitespace-nowrap font-medium text-white hidden md:table-cell">
                     <div className="flex flex-wrap mt-2">
                       {project.badges.map((b) => {
                         return (
@@ -50,7 +69,7 @@ export default function ProjectsPage() {
                       })}
                     </div>
                   </Table.Cell>
-                  <Table.Cell className="whitespace-nowrap font-medium text-white">
+                  <Table.Cell className="whitespace-nowrap font-medium text-white hidden md:table-cell">
                     {project.repoLink ? (
                       <a href={project.repoLink} target="_blank">
                         <svg
@@ -65,7 +84,7 @@ export default function ProjectsPage() {
                       </a>
                     ) : null}
                   </Table.Cell>
-                  <Table.Cell className="whitespace-nowrap font-medium text-white">
+                  <Table.Cell className="whitespace-nowrap font-medium text-white hidden sm:table-cell">
                     {project.link ? (
                       <a
                         href="#"
