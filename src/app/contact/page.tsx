@@ -5,7 +5,7 @@ export default function ProjectsPage() {
     <main className="bg-zinc-900">
       <TopNavbar></TopNavbar>
       <div className="flex max-w-screen-xl flex-col items-center justify-center mx-auto p-4 mt-3">
-        <h1 className="text-4xl mb-4">Get in Touch</h1>
+        <h1 className="text-white text-4xl mb-4">Get in Touch</h1>
         <div className=" bg-zinc-800 rounded-lg overflow-hidden shadow-lg p-5">
           <form
             className="w-full max-w-xl"

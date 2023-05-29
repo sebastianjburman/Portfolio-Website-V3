@@ -11,7 +11,7 @@ export default function TopNavbar() {
             className="mr-3 h-7 w-10 sm:h-9"
             src="/svg/terminal.svg"
           />
-          <h2 className="self-center whitespace-nowrap text-2xl font-semibold m-0">
+          <h2 className="text-white self-center whitespace-nowrap text-2xl font-semibold m-0">
             SB
           </h2>
         </Navbar.Brand>

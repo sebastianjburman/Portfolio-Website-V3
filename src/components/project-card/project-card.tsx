@@ -18,8 +18,8 @@ export default function ProjectCard({
         <img className="rounded w-2/4 rounded sm:w-full" src={image}></img>
       </div>
       <div className="flex flex-col col-span-2 ">
-        <h1 className="text-xl font-semibold mt-0">{title}</h1>
-        <p className="text-sm mt-2">{description}</p>
+        <h1 className="text-white text-xl font-semibold mt-0">{title}</h1>
+        <p className="text-white text-sm mt-2">{description}</p>
         <div className="flex flex-wrap mt-2">
           {badges.map((b) => {
             return (

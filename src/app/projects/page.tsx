@@ -121,7 +121,8 @@ export default function ProjectsPage() {
                   <Table.Cell className="whitespace-nowrap font-medium text-white hidden sm:table-cell">
                     {project.link ? (
                       <a
-                        href="#"
+                        href={project.link}
+                        target="_blank"
                         className="inline-flex mt-2 items-center font-medium text-cyan-500 hover:underline hover:text-cyan-400"
                       >
                         View

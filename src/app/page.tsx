@@ -73,7 +73,7 @@ export default function Home() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-screen">
           <div>
-            <h1 className="text-2xl mt-3 mb-5 underline font-semibold">
+            <h1 className="text-white text-2xl mt-3 mb-5 underline font-semibold">
               Recent Projects
             </h1>
             <div className="flex justify-center flex-col">
@@ -108,7 +108,9 @@ export default function Home() {
             </a>
           </div>
           <div>
-            <h1 className="text-2xl mt-3 mb-5 underline font-semibold">Work</h1>
+            <h1 className="text-white text-2xl mt-3 mb-5 underline font-semibold">
+              Work
+            </h1>
             <Timeline>
               <Timeline.Item>
                 <Timeline.Point />
