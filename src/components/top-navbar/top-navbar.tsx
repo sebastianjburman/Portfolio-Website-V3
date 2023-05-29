@@ -5,7 +5,7 @@ export default function TopNavbar() {
   return (
     <div className="w-screen bg-zinc-800">
       <Navbar fluid className="bg-zinc-800 max-w-screen-xl mx-auto  ">
-        <Navbar.Brand href="/navbars">
+        <Navbar.Brand href="/">
           <img
             alt="Terminal Svg"
             className="mr-3 h-7 w-10 sm:h-9"
