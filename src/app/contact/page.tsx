@@ -9,7 +9,7 @@ export default function ProjectsPage() {
         <div className=" bg-zinc-800 rounded-lg overflow-hidden shadow-lg p-5">
           <form
             className="w-full max-w-xl"
-            action="https://getform.io/f/989ccb71-00ca-4900-a26e-02fdf156b2f6"
+            action="https://getform.io/f/52c9b9d5-f416-4570-af29-7734064a266c"
             method="POST"
           >
             <div className="flex flex-wrap -mx-3 mb-3">
@@ -22,6 +22,7 @@ export default function ProjectsPage() {
                   name="firstName"
                   type="text"
                   placeholder="John"
+                  required
                 ></input>
               </div>
               <div className="w-full md:w-1/2 px-3">
@@ -33,6 +34,12 @@ export default function ProjectsPage() {
                   name="lastName"
                   type="text"
                   placeholder="Doe"
+                  required
+                ></input>
+                <input
+                  type="hidden"
+                  name="_gotcha"
+                  style={{ display: "none !important" }}
                 ></input>
               </div>
             </div>
@@ -44,8 +51,9 @@ export default function ProjectsPage() {
                 <input
                   className="appearance-none block w-full bg-gray-200 text-gray-700 focus:ring-cyan-600  border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                   name="email"
-                  type="text"
+                  type="email"
                   placeholder="johndoe@gmail.com"
+                  required
                 ></input>
                 <label className="block uppercase tracking-wide text-gray-500 text-xs font-bold mb-2">
                   Email
@@ -55,6 +63,7 @@ export default function ProjectsPage() {
                   className="block p-2.5 w-full text-md text-gray-700 bg-gray-200  focus:ring-cyan-600  rounded-lg border border-gray-300 focus:bg-white focus:border-gray-500 "
                   placeholder="Message"
                   style={{ resize: "none" }}
+                  required
                 ></textarea>
                 <button
                   className="text-white mt-4 bg-teal-500 hover:bg-teal-400 focus:ring-4 focus:ring-teal-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2"
