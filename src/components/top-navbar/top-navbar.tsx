@@ -3,7 +3,7 @@ import { Navbar } from "flowbite-react";
 
 export default function TopNavbar() {
   return (
-    <div className=" bg-zinc-800">
+    <div className="bg-zinc-800 sticky top-0">
       <Navbar fluid className="bg-zinc-800 max-w-screen-xl mx-auto  ">
         <Navbar.Brand href="/">
           <img
