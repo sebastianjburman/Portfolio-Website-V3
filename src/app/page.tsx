@@ -25,12 +25,13 @@ export default function Home() {
             Developer
           </h1>
           <p className="mt-6 text-base text-white max-w-6xl">
-            Welcome to my software development portfolio website! I'm currently
-            an IT Intern at KFC. I'm a passionate developer who loves solving
-            problems through coding. If you're interested in learning more about
-            my professional background and skills, please check out my Resume by
-            clicking the button below. Feel free to browse my portfolio and
-            explore the projects I've worked on. Thanks for visiting!
+            Welcome to my software development portfolio website! Currently
+            working as an IT Intern at KFC, I am a passionate developer who
+            loves solving problems through coding. If you're interested in
+            learning more about my professional background and skills, check out
+            my resume by clicking the button below. Feel free to browse my
+            portfolio and explore all the projects I've worked on. Thanks for
+            visiting!
           </p>
           <div className="mt-6 flex gap-6">
             <a
@@ -74,7 +75,7 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-screen">
           <div>
             <h1 className="text-white text-2xl mt-3 mb-5 underline font-semibold">
-              Recent Projects
+              Recent Personal Projects
             </h1>
             <div className="flex justify-center flex-col">
               {projects.map((p) => {
@@ -122,13 +123,13 @@ export default function Home() {
                     IT Intern (KFC)
                   </Timeline.Title>
                   <Timeline.Body>
-                    - NET MVC Web development on a above restaurant application.
-                    <br></br>- Application health checks to make sure a backend
-                    is ready to take in requests.
-                    <br></br>- Created test to run in CI pipelines to ensure new
-                    changes to repos don't break application functionality.
-                    <br></br>- Helped make code repos more maintainable by
-                    fixing code warnings and following best practices.
+                    - NET MVC Web development on an above restaurant
+                    application.
+                    <br></br>- Application health checks to make sure backend
+                    microservices are ready to take requests.
+                    <br></br>- Azure DevOps CI|CD pipeline development.
+                    <br></br>- Improved code repos by following best practices,
+                    fixing warnings, and removing duplicate code.
                   </Timeline.Body>
                 </Timeline.Content>
               </Timeline.Item>
