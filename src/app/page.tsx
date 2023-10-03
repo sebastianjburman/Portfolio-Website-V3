@@ -123,13 +123,17 @@ export default function Home() {
                     IT Intern (KFC)
                   </Timeline.Title>
                   <Timeline.Body>
-                    - NET MVC Web development on an above restaurant
-                    application.
-                    <br></br>- Application health checks to make sure backend
-                    microservices are ready to take requests.
-                    <br></br>- Azure DevOps CI|CD pipeline development.
-                    <br></br>- Improved code repos by following best practices,
-                    fixing warnings, and removing duplicate code.
+                    - .NET MVC Web development on an application used by data management to update restaurant data.
+                    <br></br>
+                    - Development on in-restaurant system used to run the restaurant. Deployment follow-ups.
+                    <br></br>
+                    - Root cause analysis (RCA) to determine the cause of an issue or bug in the field.
+                    <br></br>
+                    - Application health checks to make sure backend microservices are ready to take requests.
+                    <br></br>
+                    - Unit test and integration test to run in CI pipeline.
+                    <br></br>
+                    - Azure DevOps CI|CD pipeline development.
                   </Timeline.Body>
                 </Timeline.Content>
               </Timeline.Item>
