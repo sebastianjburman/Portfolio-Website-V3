@@ -17,8 +17,8 @@ export default function Home() {
           <Image
             className="mb-3 rounded-full border-solid border-2 border-slate-200"
             src="/png/homephoto.png"
-            width={50}
-            height={50}
+            width={60}
+            height={60}
             alt="Picture of the author"
           />
           <h1 className="text-3xl font-bold tracking-tight text-white sm:text-5xl">
