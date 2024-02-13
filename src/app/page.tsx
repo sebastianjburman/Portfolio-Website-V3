@@ -120,12 +120,12 @@ export default function Home() {
                     <h1 className="text-cyan-500 mb-3">Present</h1>
                   </Timeline.Time>
                   <Timeline.Title className="text-white">
-                    IT Intern (KFC)
+                  BOH IT Software Development Intern (KFC)
                   </Timeline.Title>
                   <Timeline.Body>
-                    - .NET MVC Web development on an application used by data management to update restaurant data.
+                    - .NET MVC Web development on an application used by data management to update restaurant data. 
                     <br></br>
-                    - Development on in-restaurant system used to run the restaurant. Deployment follow-ups.
+                    - Software development on in-restaurant system and services used to run the restaurant. Deployment follow-ups. 
                     <br></br>
                     - Root cause analysis (RCA) to determine the cause of an issue or bug in the field.
                     <br></br>
