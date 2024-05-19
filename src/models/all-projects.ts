@@ -15,9 +15,9 @@ const allProjects: ProjectCardModel[] = [
   ),
   new ProjectCardModel(
     "Workout Planning Application",
-    "Angular frontend, .NET backend and MongoDB. Used JWT for authentication. Project to show of my skills.",
+    "Angular frontend, .NET backend and MongoDB. Used JWT for authentication.",
     "/png/workoutapplication.png",
-    "https://workoutplanningapplication.netlify.app/",
+    undefined,
     "https://github.com/sebastianjburman/Full-Stack-Workout-Planning-Application",
     [
       new ProjectCardBadgeModel(0, "Angular", "failure"),

@@ -5,8 +5,8 @@ export default class ProjectCardModel {
     public title: string,
     public description: string,
     public image: string,
-    public link: string,
-    public repoLink: string,
+    public link: string|undefined,
+    public repoLink: string|undefined,
     public badges: ProjectCardBadgeModel[]
   ) {}
 }
